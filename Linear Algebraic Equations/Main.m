@@ -1,14 +1,12 @@
-choice = menu("Select method for solving system of linear equations:","Gauss Elimination method without pivoting", "Gauss Elimination method with partial pivoting", "Doolittle method", "Crout method", "Cholesky method" );
+choice = menu("Choose method for finding eigenvalues of a matrix", "Power Method", "Inverse Power Method", "Inverse Power Method with shift", "QR Method");
 if(choice==1)
-    Gauss_elimination_method
+    Power_Method
 elseif(choice==2)
-    Gauss_elimination_partialpivoting
+    Inverse_Power_Method
 elseif(choice==3)
-    Doolittle_method
+    Inverse_Power_Method_withshift
 elseif(choice==4)
-    Crout_method
-elseif(choice==5)
-    Cholesky_method
+    QR_Method
 else
     disp("Error");
 end
